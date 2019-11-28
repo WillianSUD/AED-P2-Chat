@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+
+<body>
+    <div class="msg_box" style="right: 400px;" rel="skp">
+        <div class="msg_head card-header">
+            <div><i style="position: absolute;"></i></div>
+            <span class="img_cont">
+                <img src="https://i.pinimg.com/originals/bc/4c/59/bc4c59e9d6d9f03153bd9a197a2384ba.jpg"
+                    class="rounded-circle user_img">
+                <span class="online_icon"></span></span>
+            <span class="person-name user_info">Chat com Kratos</span>
+            <span><i class="fas fa-video"></i></span>
+            <span><i class="fas fa-phone"></i></span>
+            <span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
+            <span id=count class="alert-msg">0</span>
+        </div>
+        <div class="msg_wrap">
+            <div id="main" class="message-content msg_card_body">
+                <div class="msg_push">
+                </div>
+            </div>
+            <div id=footer class="card-footer">
+                <div class="input-group">
+                    <div class="input-group-append">
+                        <span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+                    </div>
+                    <textarea id="message" name="" class="form-control type_msg"
+                        placeholder="Digite sua mensagem.."></textarea>
+                    <div class="input-group-append">
+                        <span type="submit" value="send" id="button" class="input-group-text send_btn"><i
+                                class="fas fa-location-arrow"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<script type="application/javascript" defer="defer" src="js/application.js"></script>
+	<script type="text/javascript" src="js/wrap.js"></script>
+</body>
+
+</html>
